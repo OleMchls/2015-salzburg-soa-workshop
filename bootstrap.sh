@@ -9,5 +9,9 @@ function install {
 install 'zip' zip
 install 'unzip' unzip
 
+echo 'installing ngrok https://ngrok.com/'
+rm ngrok.zip /usr/local/bin/ngrok
 wget -q https://api.equinox.io/1/Applications/ap_pJSFC5wQYkAyI0FIVwKYs9h1hW/Updates/Asset/ngrok.zip\?os\=linux\&arch\=386\&channel\=stable -O ngrok.zip
 sudo unzip ngrok.zip -d /usr/local/bin
+
+install 'httpie' httpie
