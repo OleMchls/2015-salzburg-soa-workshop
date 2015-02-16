@@ -63,6 +63,9 @@ GEM
       virtus (>= 1.0.0)
     hashie (3.4.0)
     hike (1.2.3)
+    httparty (0.13.3)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     ice_nine (0.11.1)
     json (1.8.2)
@@ -77,6 +80,7 @@ GEM
     multi_xml (0.5.5)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    paleta (0.2.1)
     rack (1.6.0)
     rack-accept (0.4.5)
       rack (>= 0.4)
@@ -153,6 +157,8 @@ PLATFORMS
 
 DEPENDENCIES
   grape
+  httparty
+  paleta
   rack
   rack-test
   rails
