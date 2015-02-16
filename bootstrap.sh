@@ -15,3 +15,4 @@ wget -q https://api.equinox.io/1/Applications/ap_pJSFC5wQYkAyI0FIVwKYs9h1hW/Upda
 sudo unzip ngrok.zip -d /usr/local/bin
 
 install 'httpie' httpie
+install 'nmap' nmap
