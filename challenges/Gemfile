@@ -1,5 +1,12 @@
 source 'https://rubygems.org'
 
+# Usefull for trend-color-challenges
+gem 'paleta'
+
+group :clients do
+  gem 'httparty'
+end
+
 group :frameworks do
   gem 'rack'
   gem 'sinatra'
@@ -10,4 +17,9 @@ end
 group :testing do
   gem 'rspec'
   gem 'rack-test'
+end
+
+group :debugging do
+  gem 'pry'
+  gem 'pry-byebug'
 end
