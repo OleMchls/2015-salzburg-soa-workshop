@@ -51,3 +51,6 @@ $ bundle exec rspec spec
 ```
 
 to check if your app complies with all the challenge's rules. Yay! :tada:
+
+#### bonus, w/o any rewards
+*skip the use the api provided by [colourlovers.com](http://www.colourlovers.com/api/colors/top?format=json)*
