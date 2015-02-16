@@ -9,6 +9,8 @@ Vagrant.configure('2') do |config|
 
   config.vm.network :forwarded_port, guest: 3000, host: 3000
   config.vm.network :forwarded_port, guest: 9292, host: 9292
+  config.vm.network :forwarded_port, guest: 9393, host: 9393
+  config.vm.network :forwarded_port, guest: 9494, host: 9494
   config.vm.network :forwarded_port, guest: 4567, host: 4567
   config.vm.network :forwarded_port, guest: 4568, host: 4568
   config.vm.network :forwarded_port, guest: 4569, host: 4569
