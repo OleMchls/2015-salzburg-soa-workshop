@@ -1,3 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rspec'
+group :frameworks do
+  gem 'rack'
+  gem 'sinatra'
+  gem 'rails'
+  gem 'grape'
+end
+
+group :testing do
+  gem 'rspec'
+  gem 'rack-test'
+end
