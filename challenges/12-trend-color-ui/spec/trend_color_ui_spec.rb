@@ -4,7 +4,7 @@ require 'json'
 require 'rspec'
 require 'rack/test'
 
-describe 'Trend Color API' do
+describe 'Trend Color UI' do
   include Rack::Test::Methods
 
   def app
