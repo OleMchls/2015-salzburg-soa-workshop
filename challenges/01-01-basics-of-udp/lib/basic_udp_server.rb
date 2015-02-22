@@ -3,9 +3,9 @@ require 'socket'
 class BasicUdpServer
   attr_reader :received_messages
 
-  def initialize(port:)
+  def initialize(port:, host: "127.0.0.1")
     @socket = UDPSocket.new
-    @socket.bind("127.0.0.1", port)
+    @socket.bind(host, port)
 
     @received_messages = []
 
@@ -29,7 +29,7 @@ class BasicUdpServer
     IO.select([@socket, @stop_io_reader])
     return if @stop
     message, sender = @socket.recvfrom(65536)
-    p "Received '#{message}' from #{sender[2]}"
+    # puts "Received '#{message}' from #{sender[2]}"
     @received_messages << message
   end
 end

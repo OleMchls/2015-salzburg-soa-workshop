@@ -29,7 +29,7 @@ class BasicTcpServerConnection
   end
 
   def data_received(data)
-    p "Received '#{data}' from #{@socket.peeraddr[2]}"
+    # puts "Received '#{data}' from #{@socket.peeraddr[2]}"
     @server.received_messages << data
   end
 end
