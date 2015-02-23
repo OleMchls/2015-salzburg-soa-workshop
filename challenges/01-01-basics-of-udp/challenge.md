@@ -1,4 +1,4 @@
-# Challenge 01 - Basic UDP Server & Client
+# Challenge 01-01 - Basic UDP Server & Client
 
 This introductory challenge makes you play around with an UDP server and client. Other than any other challenge it comes with a ready to run implementation.
 

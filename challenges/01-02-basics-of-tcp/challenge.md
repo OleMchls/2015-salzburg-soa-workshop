@@ -1,4 +1,4 @@
-# Challenge 02 - Basic TCP
+# Challenge 01-02 - Basic TCP
 
 This introductory challenge makes you play around with TCP. Other than other challenges it comes with a ready to run implementation.
 
