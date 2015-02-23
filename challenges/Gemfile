@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Usefull for trend-color-challenges
 gem 'paleta'
 
+# HTTP Link Header Generation / Parsing
+gem 'http_link_header'
+
 group :clients do
   gem 'httparty'
 end
