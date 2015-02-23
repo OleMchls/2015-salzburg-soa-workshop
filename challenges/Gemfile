@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 # Usefull for trend-color-challenges
 gem 'paleta'
 
-# HTTP Link Header Generation / Parsing
-gem 'http_link_header'
+# 12 Factor applications framework
+gem 'foreman'
 
 group :clients do
   gem 'httparty'
