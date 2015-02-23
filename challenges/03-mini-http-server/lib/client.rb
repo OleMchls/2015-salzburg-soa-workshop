@@ -1,6 +1,6 @@
 require 'socket'
 
-class Clients
+class Client
   def initialize(host, port)
   end
 
