@@ -24,7 +24,7 @@ Find our exercises in the [challenges](https://github.com/nesQuick/2015-salzburg
 
 ## Slides
 
-Find our slides here: [TODO](#)
+You can find the (provisional) deck [here](https://www.dropbox.com/s/6o6byvm70qnu5kr/Salzburg%202015.pdf?dl=0)
 
 ## Credits
 
