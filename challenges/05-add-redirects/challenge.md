@@ -21,7 +21,7 @@ $ bundle install
 Run
 
 ```sh
-$ bundle exec rake
+$ bundle exec rspec
 ```
 
 to check if your app complies with all the challenge's rules. Yay! :tada:

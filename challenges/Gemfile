@@ -8,6 +8,7 @@ gem 'foreman'
 
 group :clients do
   gem 'httparty'
+  gem 'faraday'
 end
 
 group :frameworks do
