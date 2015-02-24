@@ -34,7 +34,7 @@ links['last'].url # => 'https://api.github.com/users/steveklabnik/gists?page=333
 Run
 
 ```sh
-$ bundle exec rake
+$ bundle exec rspec
 ```
 
 to check if your app complies with all the challenge's rules. Yay! :tada:
