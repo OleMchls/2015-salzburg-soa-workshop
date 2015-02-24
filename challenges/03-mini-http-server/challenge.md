@@ -27,7 +27,7 @@ $ curl -vv http://localhost:9292/
 
 ## The Client
 
-In this challenge you should write a simple HGTTP client, which can fetch and parse the HTTP response form any web server.
+In this challenge you should write a simple HTTP client, which can fetch and parse the HTTP response form any web server.
 
 Change the code in `lib/client.rb` to solve the challenge.
 
