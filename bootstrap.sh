@@ -6,6 +6,8 @@ function install {
     apt-get -y install "$@" >/dev/null 2>&1
 }
 
+sudo apt-get update > /dev/null 2>&1
+
 install 'zip' zip
 install 'unzip' unzip
 
@@ -24,3 +26,7 @@ if [ ! -f $IRBRC_FILE ]; then
   echo "IRB.conf[:SAVE_HISTORY] = 100" >> $IRBRC_FILE
   echo "IRB.conf[:HISTORY_FILE] = File.join(ENV['HOME'], '.irb-save-history')" >> $IRBRC_FILE
 fi
+
+echo 'installing deis'
+curl -sSL http://deis.io/deis-cli/install.sh | sh > /dev/null 2>&1
+ln -fs $PWD/deis /usr/local/bin/deis
