@@ -6,6 +6,9 @@ gem 'paleta'
 # 12 Factor applications framework
 gem 'foreman'
 
+# Generates UUIDs
+gem 'uuid'
+
 group :clients do
   gem 'httparty'
   gem 'faraday'
