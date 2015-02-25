@@ -4,11 +4,13 @@ require 'json'
 require 'rspec'
 require 'rack/test'
 
+require_relative '../lib/trend_color_api'
+
 describe 'Trend Color API' do
   include Rack::Test::Methods
 
   def app
-    ### STUDENTS: make this method return your Rack-based app
+    TrendColorApi.new
   end
 
   def body
