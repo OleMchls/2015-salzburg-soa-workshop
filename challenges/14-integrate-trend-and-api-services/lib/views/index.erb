@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>trend color ui</title>
+    <style>
+      .color {
+        height: 5em;
+        margin: 1em;
+      }
+      .complement {
+        height: 2em;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+  <% @colors.each do |color| %>
+    <div data-color-name="<%= color['name'] %>" data-color-value="<%= color['hex'] %>" class="color" style="background-color: <%= color['hex'] %>">
+      <%= color['name'] %>
+      <div class="complement" data-color-complementary="<%= color['complement'] %>" style="background-color: <%= color['complement'] %>">complementary color: <%= color['complement'] %></div>
+    </div>
+  <% end %>
+  </body>
+</html>

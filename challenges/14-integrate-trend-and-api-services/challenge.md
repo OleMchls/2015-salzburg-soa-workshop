@@ -14,16 +14,34 @@ Copy the api server you have written in *Challenge 11* into the `app/api` folder
 
 # Development
 
-Change the code in `spec_api/color_server_spec.rb` line `11` and `spec_web/color_ui_spec.rb` line `11` to return your Rack based application and solve the challenge.
+Run the servers:
 
-You can use whatever rack-based framework you like. And whatever folder structure you like.
+**Color Web UI:** Port 9292
+**Trend Color API**: Port 9393
+**Complement Color API**: Port 9494
+
+Run the complement color api from challenge 13's folder.
+
+Run the trend color API with:
+
+```sh
+rackup -o 0.0.0.0 -p 9393 config.api.ru
+```
+
+Run the trend color web UI with:
+
+```sh
+rackup -o 0.0.0.0 -p 9393 config.ui.ru
+``
+
+There also is the new [lib/complement_colors_client.rb](lib/complement_colors_client.rb) to be used in the same way as [lib/trend_colors_client.rb](lib/trend_colors_client.rb).
 
 # Test / Compliance
 
 Run
 
 ```sh
-$ bundle exec rspec spec_web/ && bundle exec rspec spec_api/
+$ bundle exec rspec
 ```
 
 to check if your app complies with all the challenge's rules. Yay! :tada:
