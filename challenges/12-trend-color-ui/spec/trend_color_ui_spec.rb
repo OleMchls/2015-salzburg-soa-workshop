@@ -4,11 +4,13 @@ require 'json'
 require 'rspec'
 require 'rack/test'
 
+require_relative '../lib/trend_colors_ui.rb'
+
 describe 'Trend Color UI' do
   include Rack::Test::Methods
 
   def app
-    ### STUDENTS: make this method return your Rack-based app
+    TrendColorsUi.new
   end
 
   it 'should have all trend colors' do

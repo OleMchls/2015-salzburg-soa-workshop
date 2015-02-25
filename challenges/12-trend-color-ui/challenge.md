@@ -6,8 +6,6 @@ Something like this.
 
 ![](http://cl.ly/image/47141x2D1I0K/Screen%20Shot%202015-02-17%20at%2000.23.21.png)
 
-But of course it's totally up to you how it looks like. Check the "Test / Compliance" section to make sure your code is complient.
-
 # Setup
 
 ```sh
@@ -16,9 +14,15 @@ $ bundle install
 
 # Development
 
-Change the code in `spec/trend_color_ui_spec.rb` line `11` to return your Rack based application and solve the challenge.
+Change the code in [lib/trend_colors_ui.rb](lib/trend_colors_ui.rb) to make the UI work. We've already put a view together that Sinatra will use with ``erb :index``. To make that view display the colors make sure to assign the retrieved and parsed array of colors to ``@colors`` in your Sinatra app.
 
-You can use whatever rack-based framework you like. And whatever folder structure you like.
+There also is a client for your colors api in [lib/trend_colors_client.rb](lib/trend_colors_client.rb). You can use it to query the colors API like this:
+
+```ruby
+TrendColorsClient.get("/colors/trends/2013")
+```
+
+To parse JSON strings in your Sinatra app require the JSON library first with: ``require 'json'`` and then use: ``JSON.parse('[{"key": "value"}]')``.
 
 # Test / Compliance
 

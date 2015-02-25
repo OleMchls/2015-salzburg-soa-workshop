@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>trend color ui</title>
+    <style>
+      .color {
+        height: 5em
+      }
+    </style>
+  </head>
+  <body>
+  <% @colors.each do |color| %>
+    <div data-color-name="<%= color['name'] %>" data-color-value="<%= color['hex'] %>" class="color" style="background-color: <%= color['hex'] %>">
+      <%= color['name'] %>
+    </div>
+  <% end %>
+  </body>
+</html>
