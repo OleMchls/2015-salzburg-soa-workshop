@@ -29,8 +29,8 @@ describe 'Complementary Color API' do
     expect(body['complement']).to eq '#7555DA'
   end
 
-  it 'should return HTTP 422 UNPROCESSABLE ENTITY when provided with non-hex value' do
+  it 'should return HTTP 400 when provided with non-hex value' do
     get '/complement', color: 'BADAGG'
-    expect(last_response.status).to eq 422
+    expect(last_response.status).to eq 400
   end
 end
