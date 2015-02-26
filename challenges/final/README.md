@@ -249,7 +249,7 @@ The deadline is June 1st 2014.
 
 For your submission please put each system in a seperate folder which's name easily determine it's content. Zip/Tar all 4 folders and please send a single archive file. If you have any remarks (how to handle your apps, etc) feel free to attach them as a README to the archive.
 
-If you have any questions regarding this challenge please open a GitHub issue on this repo. This way everyone can see the answer. In case you wish to keep a question private please email me instead.
+If you have any questions regarding this challenge please open a GitHub issue on this repo. This way everyone can see the answer. In case you wish to keep a question private please email us instead.
 
 ## Grading
 
