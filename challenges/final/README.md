@@ -245,7 +245,7 @@ During this challenge you create 4 services. Remember that while trying to resem
 
 ## Miscellaneous
 
-The deadline is June 1st 2014.
+The deadline is March 31st 2015.
 
 For your submission please put each system in a seperate folder which's name easily determine it's content. Zip/Tar all 4 folders and please send a single archive file. If you have any remarks (how to handle your apps, etc) feel free to attach them as a README to the archive.
 
