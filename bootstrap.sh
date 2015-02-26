@@ -27,6 +27,9 @@ if [ ! -f $IRBRC_FILE ]; then
   echo "IRB.conf[:HISTORY_FILE] = File.join(ENV['HOME'], '.irb-save-history')" >> $IRBRC_FILE
 fi
 
+echo 'installing fig'
+curl -L https://github.com/docker/fig/releases/download/1.0.1/fig-`uname -s`-`uname -m` > /usr/local/bin/fig; chmod +x /usr/local/bin/fig
+
 echo 'installing deis'
 curl -sSL http://deis.io/deis-cli/install.sh | sh > /dev/null 2>&1
 ln -fs $PWD/deis /usr/local/bin/deis
