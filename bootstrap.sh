@@ -18,6 +18,8 @@ sudo unzip ngrok.zip -d /usr/local/bin
 
 install 'httpie' httpie
 install 'nmap' nmap
+install 'nodejs' nodejs
+install 'npm' npm
 
 IRBRC_FILE="/home/vagrant/.irbrc"
 if [ ! -f $IRBRC_FILE ]; then
